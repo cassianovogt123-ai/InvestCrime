@@ -2,6 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import seed from '../data/dados.json';
+import paises from './geo/paises.json';
+import estados from './geo/estados.json';
+import scMun from './geo/sc-municipios.json';
 import { parecidos, type Caso } from './ligacoes';
 import { REPO, UpdateGate } from './UpdateGate';
 
@@ -32,6 +35,9 @@ const STATUS: Record<string, string> = {
 const NIVEL = ['', 'fraca', 'média', 'forte'];
 const AMARELO = '#ffd23d', VERMELHO = '#ff3b4e', CIANO = '#29d3ff';
 
+// mapas embutidos no app (no Windows o app abre como arquivo local, onde fetch de arquivo não funciona)
+const GEO: { paises: any; estados: any; mun: any } = { paises, estados, mun: scMun };
+
 const CHAVE = 'investcrime:v1';
 const vazio = (): Local => ({ casos: [], hipoteses: [], ligacoes: [] });
 function lerLocal(): Local {
@@ -51,7 +57,7 @@ export default function App() {
   const [dados, setDados] = useState<Dados>(seed as Dados);
   const [local, setLocalState] = useState<Local>(lerLocal);
   const [erroSalvar, setErroSalvar] = useState(false);
-  const [geo, setGeo] = useState<{ paises: any; estados: any; mun: any } | null>(null);
+  const geo = GEO;
   const [nivel, setNivel] = useState<Nivel>('mercosul');
   const [mun, setMun] = useState<string | null>(null);
   const [painel, setPainel] = useState<Painel>(null);
@@ -74,8 +80,6 @@ export default function App() {
       .then((r) => (r.ok ? r.json() : null))
       .then((d: Dados | null) => { if (d && d.atualizado >= seed.atualizado) setDados(d); })
       .catch(() => {});
-    Promise.all(['paises', 'estados', 'sc-municipios'].map((n) => fetch(`./geo/${n}.json`).then((r) => r.json())))
-      .then(([paises, estados, mun]) => setGeo({ paises, estados, mun }));
     setTimeout(() => setTransicao(null), 1400);
   }, []);
 
@@ -84,7 +88,7 @@ export default function App() {
     const m = new Map<string, L.LatLngBounds>();
     geo?.mun.features.forEach((f: any) => m.set(f.properties.name, L.geoJSON(f).getBounds()));
     return m;
-  }, [geo]);
+  }, []);
   const ponto = (municipio: string, lat?: number, lng?: number): L.LatLng | null =>
     lat != null && lng != null ? L.latLng(lat, lng) : centros.get(municipio)?.getCenter() ?? null;
 

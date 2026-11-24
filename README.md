@@ -7,9 +7,16 @@ Painel pessoal de casos criminais de SC: mapa do Mercosul → Brasil → SC → 
 
 Abra o link, baixe, toque no arquivo e permita "instalar apps desconhecidos".
 
+## Baixar no PC (Windows)
+- Instalador (cria atalho e se atualiza sozinho): `.../releases/latest/download/InvestCrime-Instalador.exe`
+- Portátil (abre sem instalar): `.../releases/latest/download/InvestCrime-Portatil.exe`
+
+Se aparecer "O Windows protegeu o computador", clique em **Mais informações → Executar assim mesmo** (o app não tem assinatura paga da Microsoft).
+No PC as hipóteses ficam só naquele computador, separadas das do celular.
+
 ## Versões e atualização obrigatória
 - Cada mudança no código gera uma versão nova (1.0.1, 1.0.2...) na aba **Releases**, pelo GitHub Actions.
-- O app confere a cada 5 minutos. Se tiver versão nova, trava com "Atualização obrigatória" até instalar.
+- O app confere a cada 5 minutos. Se tiver versão nova, trava com "Atualização obrigatória" até instalar (no PC o instalador atualiza e reabre sozinho).
 - Mudar só `data/dados.json` **não** gera versão nova: o app baixa os dados atualizados sozinho.
 
 ## Regras dos dados
@@ -23,4 +30,5 @@ Abra o link, baixe, toque no arquivo e permita "instalar apps desconhecidos".
 npm install
 npm run dev
 npm test
+npm run desktop   # abre a versão de PC
 ```

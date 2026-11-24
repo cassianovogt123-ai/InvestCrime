@@ -1,9 +1,9 @@
-name: Gerar APK
+name: Gerar APK e app Windows
 
 on:
   push:
     branches: [main]
-    # dados novos (data/dados.json) chegam no app sem APK novo, então não geram atualização obrigatória
+    # dados novos (data/dados.json) chegam no app sem versão nova, então não geram atualização obrigatória
     paths-ignore: ['data/**', '**.md']
   workflow_dispatch:
 
@@ -14,6 +14,7 @@ jobs:
   android:
     runs-on: ubuntu-latest
     env:
+      ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
       VERSION_CODE: ${{ github.run_number }}
     steps:
       - uses: actions/checkout@v4
@@ -34,6 +35,42 @@ jobs:
         working-directory: android
         run: chmod +x gradlew && ./gradlew assembleRelease --no-daemon
       - run: cp android/app/build/outputs/apk/release/app-release.apk InvestCrime.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: InvestCrime-APK
+          retention-days: 1 # só passa o arquivo para a release
+          path: InvestCrime.apk
+
+  windows:
+    runs-on: windows-latest
+    env:
+      VERSION_CODE: ${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # o atualizador do Windows compara esta versão com a release mais nova
+      - run: npm pkg set version=1.0.${{ github.run_number }}
+      - run: npm run build:win
+      - uses: actions/upload-artifact@v4
+        with:
+          name: InvestCrime-Windows
+          retention-days: 1
+          path: |
+            release/InvestCrime-Instalador.exe
+            release/InvestCrime-Portatil.exe
+
+  publicar:
+    needs: [android, windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
       - uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
@@ -41,4 +78,5 @@ jobs:
           make_latest: "true"
           body: |
             **Celular (Android):** baixe `InvestCrime.apk` e abra o arquivo (permita "instalar apps desconhecidos").
-          files: InvestCrime.apk
+            **Computador (Windows):** `InvestCrime-Instalador.exe` (instala com atalho e se atualiza sozinho) ou `InvestCrime-Portatil.exe` (abre sem instalar).
+          files: out/*
