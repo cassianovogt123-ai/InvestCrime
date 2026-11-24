@@ -1,0 +1,335 @@
+{
+  "atualizado": "2026-11-24",
+  "aviso": "Dados públicos: notícias e Portal Foragidos da Polícia Civil de SC. Vínculos caso↔foragido aqui só existem quando a própria fonte afirma.",
+  "foragidos": [
+    {
+      "id": "dario-de-souza",
+      "nome": "Dario de Souza",
+      "crimes": ["Homicídio"],
+      "mandados": "Mandado de prisão em aberto",
+      "desde": "1995",
+      "resumo": "Procurado por um homicídio em Vidal Ramos em 1995. Segundo a polícia, entrou na casa da vítima, atirou na cabeça dela e deixou a arma ao lado para simular suicídio. A foto do cartaz é de 1994.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=110",
+      "historico": [
+        { "data": "1995", "municipio": "Vidal Ramos", "texto": "Homicídio (arma de fogo, simulou suicídio)" }
+      ]
+    },
+    {
+      "id": "manoel-messias",
+      "nome": "Manoel Messias de Jesus Santos",
+      "crimes": ["Homicídio", "Homicídio qualificado"],
+      "mandados": "2 mandados de prisão (2020 e 2021)",
+      "desde": "2020",
+      "resumo": "Dois mandados de prisão por dois homicídios, um deles qualificado, cometidos na região de Joinville.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=109",
+      "historico": [
+        { "data": "2020", "municipio": "Joinville", "texto": "Mandado de prisão por homicídio (região de Joinville)" },
+        { "data": "2021", "municipio": "Joinville", "texto": "Mandado de prisão por homicídio qualificado (região de Joinville)" }
+      ]
+    },
+    {
+      "id": "daniel-mariano",
+      "nome": "Daniel Mariano",
+      "crimes": ["Roubo", "Homicídio qualificado", "Organização criminosa"],
+      "mandados": "3 mandados de prisão",
+      "desde": "",
+      "resumo": "Procurado por roubo, homicídio qualificado e participação em organização criminosa em Joinville.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=102",
+      "historico": [
+        { "data": "", "municipio": "Joinville", "texto": "Roubo, homicídio qualificado e organização criminosa" }
+      ]
+    },
+    {
+      "id": "gustavo-amarilla",
+      "nome": "Gustavo Amarilla",
+      "crimes": ["Furto qualificado", "Roubo qualificado", "Homicídio qualificado"],
+      "mandados": "3 mandados de prisão (2020 e 2021)",
+      "desde": "2020",
+      "resumo": "Crimes de furto, roubo e homicídio, todos qualificados, cometidos na região de Lages.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=99",
+      "historico": [
+        { "data": "2020", "municipio": "Lages", "texto": "Mandados por furto, roubo e homicídio qualificados (região de Lages)" }
+      ]
+    },
+    {
+      "id": "silvana-seidler",
+      "nome": "Silvana Seidler",
+      "crimes": ["Homicídio qualificado", "Ocultação de cadáver"],
+      "mandados": "Condenada",
+      "desde": "2015",
+      "resumo": "Condenada pelo homicídio qualificado e ocultação do cadáver da própria filha, no Sul do estado. Foragida desde a data do crime, em 2015.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=98",
+      "historico": [
+        { "data": "2015", "municipio": "", "regiao": "Sul de SC", "lat": -28.48, "lng": -49.01, "texto": "Homicídio qualificado e ocultação de cadáver (cidade não divulgada)" }
+      ]
+    },
+    {
+      "id": "gabriel-ilha",
+      "nome": "Gabriel Maurilio Ilha",
+      "crimes": ["Homicídios", "Tentativas de homicídio", "Receptação", "Organização criminosa"],
+      "mandados": "Condenado a quase 83 anos",
+      "desde": "nov/2022",
+      "resumo": "Condenado a quase 83 anos por homicídios ligados à disputa entre facções. Fugiu da Penitenciária Industrial de Joinville em 2016 e de novo em novembro de 2022.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=78",
+      "historico": [
+        { "data": "2016-11-02", "municipio": "Joinville", "texto": "Homicídio ligado à rivalidade entre facções" },
+        { "data": "2016", "municipio": "Joinville", "texto": "Primeira fuga da Penitenciária Industrial de Joinville" },
+        { "data": "2022-11", "municipio": "Joinville", "texto": "Segunda fuga; não localizado desde então" }
+      ]
+    },
+    {
+      "id": "jonny-mafra",
+      "nome": "Jonny Roger Mafra",
+      "apelido": "Rato",
+      "crimes": ["Tráfico de drogas", "Associação para o tráfico", "Lavagem de dinheiro", "Organização criminosa"],
+      "mandados": "Mandado de prisão em aberto",
+      "desde": "04/02/2021",
+      "resumo": "Natural de Blumenau. Apontado como líder de organização criminosa com atuação no litoral catarinense.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=168",
+      "historico": [
+        { "data": "2021-02-04", "municipio": "", "regiao": "Litoral de SC", "lat": -26.91, "lng": -48.66, "texto": "Foragido desde esta data; atuação no litoral catarinense" }
+      ]
+    },
+    {
+      "id": "erick-dorigon",
+      "nome": "Erick Gabriel Matos Dorigon",
+      "apelido": "Gordinho Bololo",
+      "crimes": ["Tráfico de drogas"],
+      "mandados": "Mandado de prisão em aberto",
+      "desde": "",
+      "resumo": "Natural de Braço do Norte. Procurado por tráfico de drogas.",
+      "cartaz": "https://sistemas.pc.sc.gov.br/foragidos/foragido.php?pagina=0&id=169",
+      "historico": [
+        { "data": "", "municipio": "Braço do Norte", "texto": "Naturalidade; procurado por tráfico de drogas" }
+      ]
+    }
+  ],
+  "casos": [
+    {
+      "id": "c-chapeco-agua-amarela",
+      "data": "2026-11-22",
+      "quando": "Tiros na noite de 22/11; corpo achado na manhã de 23/11",
+      "municipio": "Chapecó",
+      "local": "Comunidade de Água Amarela (interior)",
+      "tipo": "homicidio",
+      "titulo": "Homem de 25 anos morto a tiros em frente a uma casa",
+      "resumo": "Corpo encontrado no portão de uma residência, com tiro no peito. Morador ouviu disparos à noite, aparentemente vindos de mais longe. A PM achou uma bicicleta abandonada perto do local.",
+      "arma": "fogo",
+      "alvo": "pessoa",
+      "status": "aberto",
+      "fonte": "https://www.nsctotal.com.br/seguranca/morador-relata-ter-ouvido-tiros-a-noite-e-encontra-jovem-morto-em-frente-de-casa-em-sc"
+    },
+    {
+      "id": "c-chapeco-linha-almeida",
+      "data": "2026-11-20",
+      "quando": "Sexta-feira, 20/11, à tarde",
+      "municipio": "Chapecó",
+      "local": "Linha Almeida (interior)",
+      "tipo": "feminicidio",
+      "titulo": "Mulher e companheiro mortos a tiros pelo ex",
+      "resumo": "Tratado como feminicídio seguido de homicídio, motivado por ciúmes. O suspeito foi encontrado morto a cerca de 7 km do local.",
+      "arma": "fogo",
+      "alvo": "pessoa",
+      "status": "autor_morto",
+      "fonte": "https://ndmais.com.br/seguranca/homem-invade-casa-da-mae-de-ex-companheira-e-mata-ela-e-atual-em-sc/"
+    },
+    {
+      "id": "c-zortea",
+      "data": "2026-11-21",
+      "quando": "Sábado, 21/11",
+      "municipio": "Zortéa",
+      "local": "Dentro da casa da vítima",
+      "tipo": "homicidio",
+      "titulo": "Idoso de 78 anos morto a tiros dentro de casa",
+      "resumo": "Suspeito de 71 anos preso horas depois. Motivação não informada.",
+      "arma": "fogo",
+      "alvo": "pessoa",
+      "status": "suspeito_preso",
+      "fonte": "https://nsctotal.com.br/seguranca/idoso-e-morto-a-tiros-dentro-de-casa-no-meio-oeste-de-sc-suspeito-de-71-anos-e-preso-horas-depois"
+    },
+    {
+      "id": "c-itajai-farmacia",
+      "data": "2026-11-17",
+      "quando": "17/11; suspeito preso em 21/11",
+      "municipio": "Itajaí",
+      "local": "Farmácia no bairro Cordeiros",
+      "tipo": "latrocinio",
+      "titulo": "Latrocínio em farmácia: ataque a faca",
+      "resumo": "Homem atacou duas pessoas a facadas dentro da farmácia; uma vítima de 64 anos morreu. Polícia identificou o suspeito (28 anos) por imagens, tatuagens e uma bicicleta usada no crime.",
+      "arma": "faca",
+      "alvo": "comercio",
+      "status": "suspeito_preso",
+      "fonte": "https://sctd.com.br/seguranca/suspeito-de-latrocinio-em-farmacia-e-preso-em-itajai/"
+    },
+    {
+      "id": "c-abelardo-luz",
+      "data": "2026-11-21",
+      "quando": "Madrugada de sábado, 21/11",
+      "municipio": "Abelardo Luz",
+      "local": "",
+      "tipo": "tentativa",
+      "titulo": "Briga termina com homem esfaqueado",
+      "resumo": "Tentativa de homicídio com faca após uma briga. Prisão não informada.",
+      "arma": "faca",
+      "alvo": "pessoa",
+      "status": "aberto",
+      "fonte": "https://ndmais.com.br/video/duas-tentativas-de-homicidio-mobilizam-forcas-de-seguranca-no-oeste-de-sc/"
+    },
+    {
+      "id": "c-sao-lourenco",
+      "data": "2026-11-21",
+      "quando": "Madrugada de sábado, 21/11",
+      "municipio": "São Lourenço do Oeste",
+      "local": "",
+      "tipo": "tentativa",
+      "titulo": "Homem atacado a faca",
+      "resumo": "Tentativa de homicídio com faca. A notícia não traz mais detalhes.",
+      "arma": "faca",
+      "alvo": "pessoa",
+      "status": "aberto",
+      "fonte": "https://ndmais.com.br/video/duas-tentativas-de-homicidio-mobilizam-forcas-de-seguranca-no-oeste-de-sc/"
+    },
+    {
+      "id": "c-xanxere-faca",
+      "data": "2026-11-15",
+      "quando": "Fim de semana de 14–15/11",
+      "municipio": "Xanxerê",
+      "local": "Dentro de uma residência",
+      "tipo": "tentativa",
+      "titulo": "Homem esfaqueado por morador da mesma casa",
+      "resumo": "Vítima de 35 anos ferida na perna, tórax e cabeça durante desentendimento. Suspeito de 47 anos preso pela PM e faca apreendida.",
+      "arma": "faca",
+      "alvo": "pessoa",
+      "status": "suspeito_preso",
+      "fonte": "https://ndmais.com.br/video/duas-tentativas-de-homicidio-sao-registradas-no-oeste-de-sc/"
+    },
+    {
+      "id": "c-nova-erechim",
+      "data": "2026-11-15",
+      "quando": "Fim de semana de 14–15/11",
+      "municipio": "Nova Erechim",
+      "local": "",
+      "tipo": "tentativa",
+      "titulo": "Homem atropelado de propósito após discussão",
+      "resumo": "Vítima de 37 anos ficou gravemente ferida. Segundo testemunhas, o motorista avançou contra ela de propósito depois de uma discussão.",
+      "arma": "veiculo",
+      "alvo": "pessoa",
+      "status": "aberto",
+      "fonte": "https://ndmais.com.br/video/duas-tentativas-de-homicidio-sao-registradas-no-oeste-de-sc/"
+    },
+    {
+      "id": "c-xanxere-roubo",
+      "data": "2026-11-10",
+      "quando": "10/11, por volta das 21h06",
+      "municipio": "Xanxerê",
+      "local": "Av. Brasil, bairro Maria Winckler",
+      "tipo": "roubo",
+      "titulo": "Roubo a estabelecimento comercial",
+      "resumo": "PM do 30º BPM/Fron atendeu o roubo, analisou câmeras e prendeu um homem.",
+      "arma": "",
+      "alvo": "comercio",
+      "status": "suspeito_preso",
+      "fonte": "https://www.portalfaxinal.com.br/noticias/policia-militar-prende-homem-por-roubo-a-estabelecimento-comercial"
+    },
+    {
+      "id": "c-chapeco-joalherias",
+      "data": "2026-11-13",
+      "quando": "Prisões em 13/11",
+      "municipio": "Chapecó",
+      "local": "",
+      "tipo": "furto",
+      "titulo": "Quatro presos por furtos a joalherias e lojas",
+      "resumo": "Operação conjunta da Polícia Civil e PM prendeu quatro suspeitos de uma série de furtos a joalherias e estabelecimentos.",
+      "arma": "",
+      "alvo": "comercio",
+      "status": "suspeito_preso",
+      "fonte": "https://pc.sc.gov.br/"
+    },
+    {
+      "id": "c-rio-negrinho",
+      "data": "2026-11-12",
+      "quando": "Prisão em 12/11",
+      "municipio": "Rio Negrinho",
+      "local": "",
+      "tipo": "roubo",
+      "titulo": "Preso suspeito de série de roubos",
+      "resumo": "Mandado de prisão preventiva cumprido contra homem de 29 anos investigado por uma série de crimes graves no município.",
+      "arma": "",
+      "alvo": "",
+      "status": "suspeito_preso",
+      "fonte": "https://pc.sc.gov.br/"
+    },
+    {
+      "id": "c-porto-uniao",
+      "data": "2026-11-23",
+      "quando": "Inquérito concluído em 23/11 (data do crime não informada)",
+      "municipio": "Porto União",
+      "local": "Zona rural",
+      "tipo": "feminicidio",
+      "titulo": "Homem indiciado por feminicídio e fraude processual",
+      "resumo": "Polícia Civil concluiu o inquérito sobre a morte de uma mulher na zona rural e indiciou um homem.",
+      "arma": "",
+      "alvo": "pessoa",
+      "status": "concluido",
+      "fonte": "https://pc.sc.gov.br/?p=42539"
+    },
+    {
+      "id": "c-sfs-cobre",
+      "data": "2026-11-23",
+      "quando": "23/11, por volta das 14h44",
+      "municipio": "São Francisco do Sul",
+      "local": "Rod. Duque de Caxias, bairro Ubatuba",
+      "tipo": "furto",
+      "titulo": "Furto de fios de cobre em torre de telefonia",
+      "resumo": "Homem de 34 anos flagrado saindo de uma torre com fios de cobre e alicates. Preso pela PM.",
+      "arma": "",
+      "alvo": "infraestrutura",
+      "status": "suspeito_preso",
+      "fonte": "https://clicrdc.com.br/seguranca-publica/homem-e-preso-suspeito-de-furtar-fios-de-torre-de-telecomunicacoes-em-sc/"
+    },
+    {
+      "id": "c-camboriu",
+      "data": "2026-11-05",
+      "quando": "Quinta-feira, 05/11, à noite",
+      "municipio": "Camboriú",
+      "local": "Rua Roma, perto do Parque Linear",
+      "tipo": "confronto",
+      "titulo": "Dois homens armados morrem em confronto com a PM",
+      "resumo": "Segundo a PM, a dupla (23 e 28 anos) planejava um roubo usando uma moto Honda CG e reagiu à abordagem.",
+      "arma": "fogo",
+      "alvo": "",
+      "veiculo": "moto",
+      "status": "autor_morto",
+      "fonte": "https://ndmais.com.br/seguranca/dois-homens-armados-morrem-em-confronto-com-a-pm-apos-suspeita-de-plano-de-roubo-em-sc/"
+    },
+    {
+      "id": "c-dionisio",
+      "data": "2026-11-19",
+      "quando": "19/11",
+      "municipio": "Dionísio Cerqueira",
+      "local": "Área rural",
+      "tipo": "arma",
+      "titulo": "Preso em flagrante por posse ilegal de arma",
+      "resumo": "Polícia Civil cumpriu mandados de busca em área rural e prendeu um homem em flagrante.",
+      "arma": "fogo",
+      "alvo": "",
+      "status": "suspeito_preso",
+      "fonte": "https://pc.sc.gov.br/?p=42513"
+    },
+    {
+      "id": "c-cordilheira-alta",
+      "data": "2025-11-09",
+      "quando": "09/11/2025; preso em 15/11/2025",
+      "municipio": "Cordilheira Alta",
+      "local": "Campo de futebol, Linha Gregório",
+      "tipo": "homicidio",
+      "titulo": "Homicídio em campo de futebol: autor era foragido há quase 20 anos",
+      "resumo": "Homem de 37 anos morto após discussão durante confraternização. O autor confessou, indicou o revólver .38 e foi preso com dois mandados: o do homicídio e o de crimes de 2007, pelos quais estava foragido.",
+      "arma": "fogo",
+      "alvo": "pessoa",
+      "status": "suspeito_preso",
+      "vinculo_fonte": "A fonte informa que o autor estava foragido havia quase 20 anos (crimes de 2007). O nome não foi divulgado.",
+      "fonte": "https://www.nsctotal.com.br/?p=7736139"
+    }
+  ]
+}

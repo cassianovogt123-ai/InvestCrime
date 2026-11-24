@@ -1,0 +1,9 @@
+{
+  "appId": "br.com.investcrime",
+  "appName": "InvestCrime",
+  "webDir": "dist",
+  "backgroundColor": "#05070d",
+  "server": {
+    "androidScheme": "https"
+  }
+}

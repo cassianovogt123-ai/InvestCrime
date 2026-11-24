@@ -1,0 +1,44 @@
+name: Gerar APK
+
+on:
+  push:
+    branches: [main]
+    # dados novos (data/dados.json) chegam no app sem APK novo, então não geram atualização obrigatória
+    paths-ignore: ['data/**', '**.md']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    env:
+      VERSION_CODE: ${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v4
+      - run: npm ci
+      - run: npm test
+      - name: Build web + sincronizar Android
+        run: npx vite build && npx cap sync android
+      - name: Compilar APK
+        working-directory: android
+        run: chmod +x gradlew && ./gradlew assembleRelease --no-daemon
+      - run: cp android/app/build/outputs/apk/release/app-release.apk InvestCrime.apk
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: InvestCrime 1.0.${{ github.run_number }}
+          make_latest: "true"
+          body: |
+            **Celular (Android):** baixe `InvestCrime.apk` e abra o arquivo (permita "instalar apps desconhecidos").
+          files: InvestCrime.apk
